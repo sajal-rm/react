@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <script 
+    crossorigin
+     src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--here this is line that will include react library and getting react funtions in our projects -->
+     
+<script 
+crossorigin 
+src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script><!-- this file acts like a bridge btween these react and browser , which is dom , so its basically is react dom file -->
+<script src="./app.js"></script>
+
+</body>
+<!-- <script>
+    // writng hello world using javascript
+
+    // const body = document.querySelector("body");
+    // const gh=document.createElement('h1')// create h1 element 
+    // const h1=document.createTextNode('hello world from javascript')// creating a text node conatainig text        
+    // gh.appendChild(h1)//appending text node in to h1 
+    // body.appendChild(gh);  // Append h1 element in to the body
+    // // document.body.appendChild(gh)  //alternative way of append ing someting in to the body of doucment 
+
+
+    // another way of writing hello world in javascript
+// const vari=document.createElement('h1')
+// vari.innerHTML='hello world from javacrpt'
+// document.querySelector('body').appendChild(vari)
+
+
+
+// cdn => content delivery network , react libraries are hosted on cdn , we copy cdn link to link react libraries from cdn , after taking cdn in to our project , now browser can understand what is react with cdn links 
+// out of 2 links of cdn links included , first one is of  
+
+
+    //***** writing hello world using react ****
+
+  
+
+  const heading =React.createElement('h1',{},'hello world from react')// thats how element is created in react , out of 3 arguments given in react.create element, first one is the element which is created , second one is object, in which if any attributes can be given like class , id etc and third one is given to content  inside the element it is creating like we have created h1 here 
+
+// but we need to append this h1 elemnt created , so we will do append this in a root , and that root should be created at first in react , then using root for dom manipulation in react like here inserting newly crated element heading in root 
+// since creating element is job of first link given so reactis used as prrefix of create element of h1
+//here making root is for dom manipulation , so we use seocnd lbirrary so use react.dom is used for creation of root and all operation of dom manipulation 
+// const root_make=ReactDOM.createRoot(document.body)// its also correct but taking body directly is discouraged
+const root_make=ReactDOM.createRoot(document.getElementById('div'))// react.createelement is creating element from core react, but putting that element in to dom , will take reactDOM libraries createroot() method , hence a root is created using reactdom (2nd link) . Here any one of element is given a to be as a root , so herewe are selecting that element using its id , we selected using document.getElementById('div') ,hence first element with div as id in documen is selected and that will be root for react dom here and this document.getElementbyid('div') and other methods to select returns reference of DOM elements ,and reactdom.createroot() needs reference of dom element in its bracket to operate
+root_make.render(heading)// hence rendering heading in root_make , which is root of reactdom
+// now we can check element in browser , that h1 part with inercoontent will be in the div id of body 
+    </script> -->
+    <!-- //its feel like whatever we wrote was lengthy and not good way to use 
+    // so lets make a new js file to insert all js code in that , and liking that link here  -->
+   
+</html>
